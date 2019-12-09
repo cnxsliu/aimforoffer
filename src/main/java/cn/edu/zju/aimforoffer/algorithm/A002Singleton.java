@@ -5,16 +5,16 @@ package cn.edu.zju.aimforoffer.algorithm;
  * @author: cnxsliu
  * @date: 2019/12/9 20:41
  */
-public class A002_Singleton {
+public class A002Singleton {
 
     private static class SingletonHolder{
-        private static A002_Singleton ourInstance = new A002_Singleton();
+        private static A002Singleton ourInstance = new A002Singleton();
     }
 
-    public static A002_Singleton getInstance(){
+    public static A002Singleton getInstance(){
         return SingletonHolder.ourInstance;
     }
-    private A002_Singleton(){
+    private A002Singleton(){
     }
 
 }

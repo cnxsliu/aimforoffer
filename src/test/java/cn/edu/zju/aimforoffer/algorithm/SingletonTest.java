@@ -11,13 +11,13 @@ import org.junit.Test;
  */
 public class SingletonTest {
 
-    A001_Assign.MyString ms1;
-    A001_Assign.MyString ms2;
+    A001Assign.MyString ms1;
+    A001Assign.MyString ms2;
     @Before
     public void  setUp(){
         System.out.println("Enter the method");
-        ms1 = new A001_Assign.MyString("a");
-        ms2 = new A001_Assign.MyString("b");
+        ms1 = new A001Assign.MyString("a");
+        ms2 = new A001Assign.MyString("b");
         ms2.assign(ms1);
     }
 

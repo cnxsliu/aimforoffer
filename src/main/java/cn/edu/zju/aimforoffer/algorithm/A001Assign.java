@@ -14,6 +14,7 @@ package cn.edu.zju.aimforoffer.algorithm;
  * 赋值运算函数内部不会改变传入的实例的状态，因此应该为传入的引用参数加上const参数。
  * 3、释放实例自身的已有的内存。防止内存泄露。
  * 4、判断传入的参数和当前的实例是否是同一个实例。
+ * 5、
  */
 public class A001Assign {
     public static class MyString{

@@ -4,8 +4,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 /**
  * @author cnxsliu
  * @description
@@ -13,10 +11,10 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class A003FindTest {
 
-    A003Find a003Find;
+    A004Find a003Find;
     @BeforeEach
     void setUp() {
-        a003Find = new A003Find();
+        a003Find = new A004Find();
     }
 
     @AfterEach

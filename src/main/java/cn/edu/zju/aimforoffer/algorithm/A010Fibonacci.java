@@ -10,7 +10,7 @@ package cn.edu.zju.aimforoffer.algorithm;
  * 3、更简单地办法是从下往上计算。先计算f(0),f(1)，然后算出f(2)，再根据f(1)和f(2)算出f(3)，依次算到第n项。
  */
 public class A010Fibonacci {
-    public long fibonacii(int n){
+    public long fibonacci(int n){
         long result = 0;
         long preOne = 1;
         long preTwo = 0;

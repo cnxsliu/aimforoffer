@@ -14,6 +14,7 @@ package cn.edu.zju.aimforoffer.algorithm;
  * 数字排列
  * 1、把数字的每一位都从0~9排列一遍，得到所有的十进制数。
  * 2、排在前面的0不打印出来。
+ * 3、递归可以用树状图来展示更加容易理解
  */
 public class A017Print1ToMaxOfNDigits {
     public void print1ToMaxOfNDigits(int n) {

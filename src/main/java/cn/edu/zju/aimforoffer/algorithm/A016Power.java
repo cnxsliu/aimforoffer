@@ -9,6 +9,7 @@ package cn.edu.zju.aimforoffer.algorithm;
  * 2、代码注意完整性：基本功能、边界值、非法输入。
  * 3、大数问题要用字符串或数组。
  * 4、考虑输入的指数小于1的情况。
+ * 5、右移一位代替除以2，用位与运算符代替除余运算符（%）来判断一个数是否是
  */
 public class A016Power {
     public double Power(double base, int exponent) {

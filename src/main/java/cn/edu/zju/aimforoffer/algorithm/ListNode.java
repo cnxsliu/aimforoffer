@@ -9,4 +9,8 @@ package cn.edu.zju.aimforoffer.algorithm;
 public class ListNode {
     int val;
     ListNode next;
+
+    ListNode(int val) {
+        this.val = val;
+    }
 }

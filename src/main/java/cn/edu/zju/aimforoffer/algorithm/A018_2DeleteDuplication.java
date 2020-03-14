@@ -8,7 +8,7 @@ package cn.edu.zju.aimforoffer.algorithm;
  * 1、从头遍历整个链表，如果当前节点的值与下一个节点的值相同，可以删除。
  * 2、把当前节点的前一个节点和后面值比当前节点的值大的节点相连。
  */
-public class A0182DeleteDuplication {
+public class A018_2DeleteDuplication {
     public ListNode deleteDuplication(ListNode pHead) {
         if(pHead == null) {
             return null;

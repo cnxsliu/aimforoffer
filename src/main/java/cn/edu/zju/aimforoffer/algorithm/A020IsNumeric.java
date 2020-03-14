@@ -7,7 +7,6 @@ package cn.edu.zju.aimforoffer.algorithm;
  * @strategy
  * 1、E/e后面不能有小数点
  * 2、除了第一位的+/-，其余的都必须是前一位是E/e
- * 3、
  */
 public class A020IsNumeric {
     public boolean isNumeric(char[] str) {

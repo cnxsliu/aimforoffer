@@ -11,7 +11,7 @@ package cn.edu.zju.aimforoffer.algorithm;
  * 3、将当前节点赋值给前一个节点。
  * 4、将后一个节点赋值给当前节点。
  */
-public class A24ReverseList {
+public class A024ReverseList {
     public ListNode reverseList (ListNode head) {
         ListNode pre = null;
         ListNode curr = head;

@@ -4,8 +4,7 @@ package cn.edu.zju.aimforoffer.algorithm;
  * @author cnxsliu
  * @description
  * @date 2020/1/10 14:47
- * @strategy
- * 1、使用回溯法。
+ * @strategy 1、使用回溯法。
  * 2、机器人从（0,0）开始移动。
  * 3、当进入（i，j）时，通过检查坐标的位数和来判断机器人是否能够进入。
  * 4、如果能够进入，在判断它能够进入4个相邻的格子。
@@ -17,7 +16,7 @@ public class A013MovingCount {
     }
 
     private int helper(int i, int j, int rows, int cols, int[][] flag, int threshold) {
-        if(i < 0 || i >= rows || j < 0 || j >= cols || numSum(i) + numSum(j) > threshold || flag[i][j] == 1) {
+        if (i < 0 || i >= rows || j < 0 || j >= cols || numSum(i) + numSum(j) > threshold || flag[i][j] == 1) {
             return 0;
         }
         flag[i][j] = 1;
@@ -29,7 +28,7 @@ public class A013MovingCount {
 
     private int numSum(int i) {
         int sum = 0;
-        while(i > 0) {
+        while (i > 0) {
             sum += i % 10;
             i = i / 10;
         }

@@ -4,8 +4,7 @@ package cn.edu.zju.aimforoffer.algorithm;
  * @author cnxsliu
  * @description
  * @date 2020/1/14 22:58
- * @strategy
- * 在字符串上模拟数字加法
+ * @strategy 在字符串上模拟数字加法
  * 1、用字符串或者数组表达大数
  * 2、用字符串表示数字，'0'~'9'之间的某一个字符用来表示数字中的一位
  * 3、定义一个长度为n + 1的字符串，最后一位是结束符号'\0'
@@ -30,11 +29,11 @@ public class A017Print1ToMaxOfNDigits {
     }
 
     private void A017Print1ToMaxOfNDigitsRecursively(char[] number, int length, int index) {
-        if(index == length - 1) {
+        if (index == length - 1) {
             PrintNumber(number);
             return;
         }
-        for(int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {
             number[index + 1] = (char) (i + '0');
             A017Print1ToMaxOfNDigitsRecursively(number, length, index + 1);
         }
@@ -44,10 +43,10 @@ public class A017Print1ToMaxOfNDigits {
         boolean isBeginning0 = true;
         int nLength = number.length;
         for (int i = 0; i < nLength; i++) {
-            if(isBeginning0 && number[i] != '0') {
+            if (isBeginning0 && number[i] != '0') {
                 isBeginning0 = false;
             }
-            if(!isBeginning0) {
+            if (!isBeginning0) {
                 System.out.printf("%c", number[i]);
             }
         }

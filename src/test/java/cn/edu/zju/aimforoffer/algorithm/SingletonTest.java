@@ -13,8 +13,9 @@ public class SingletonTest {
 
     A001Assign.MyString ms1;
     A001Assign.MyString ms2;
+
     @Before
-    public void  setUp(){
+    public void setUp() {
         System.out.println("Enter the method");
         ms1 = new A001Assign.MyString("a");
         ms2 = new A001Assign.MyString("b");

@@ -4,8 +4,7 @@ package cn.edu.zju.aimforoffer.algorithm;
  * @author cnxsliu
  * @description
  * @date 2020/2/23 17:06
- * @strategy
- * 1、E/e后面不能有小数点
+ * @strategy 1、E/e后面不能有小数点
  * 2、除了第一位的+/-，其余的都必须是前一位是E/e
  */
 public class A020IsNumeric {
@@ -27,7 +26,7 @@ public class A020IsNumeric {
 
         for (int i = index; i < str.length; i++) {
             if (str[i] == '-' || str[i] == '+') {
-                if (str[i-1] != 'e' && str[i-1] != 'E') {
+                if (str[i - 1] != 'e' && str[i - 1] != 'E') {
                     return false;
                 }
                 continue;
@@ -37,7 +36,7 @@ public class A020IsNumeric {
                 if (ecount > 1) {
                     return false;
                 }
-                if (i == 0 || str[i-1] < 48 || str[i-1] > 57 || i == str.length-1) {
+                if (i == 0 || str[i - 1] < 48 || str[i - 1] > 57 || i == str.length - 1) {
                     return false;
                 }
                 point++;

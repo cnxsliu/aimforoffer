@@ -15,7 +15,7 @@ public class A019Match {
         //字符串长度为1时
         if (str.length == 1) {
             if (pattern.length == 1) {
-                if(str[0] == pattern[0] || pattern[0] == '.') {
+                if (str[0] == pattern[0] || pattern[0] == '.') {
                     return true;
                 } else {
                     return false;
@@ -39,17 +39,17 @@ public class A019Match {
         //如果pattern第二个字符时*
         if (pindex + 1 < pattern.length && pattern[pindex + 1] == '*') {
             if (sindex != str.length && str[sindex] == pattern[pindex] ||
-            sindex != str.length && pattern[pindex] == '.') {
+                    sindex != str.length && pattern[pindex] == '.') {
                 return matchIndex(str, sindex, pattern, pindex + 2) ||
-                        matchIndex(str,sindex + 1, pattern, pindex + 2) ||
+                        matchIndex(str, sindex + 1, pattern, pindex + 2) ||
                         matchIndex(str, sindex + 1, pattern, pindex);
             } else {
-               return matchIndex(str, sindex, pattern, pindex + 2);
+                return matchIndex(str, sindex, pattern, pindex + 2);
             }
         }
         //如果pattern第二个字符不是*
-        if ( sindex != str.length && str[sindex] == pattern[pindex] ||
-        sindex != str.length && pattern[pindex] == '.') {
+        if (sindex != str.length && str[sindex] == pattern[pindex] ||
+                sindex != str.length && pattern[pindex] == '.') {
             return matchIndex(str, sindex + 1, pattern, pindex + 1);
         }
         return false;

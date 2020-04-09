@@ -4,15 +4,13 @@ package cn.edu.zju.aimforoffer.algorithm;
  * @author cnxsliu
  * @description
  * @date 2020/3/22 19:40
- * @strategy
- * 1、对所有结点进行遍历，判断是否满足条件
+ * @strategy 1、对所有结点进行遍历，判断是否满足条件
  * 2、对于所有结点的树中的节点，判断是否界节点全部相同
  * 3、需要使用两个递归子函数
- *
  */
 public class A026HasSubtree {
     //递归子函数1
-    public boolean hasSubTree (TreeNode source, TreeNode target) {
+    public boolean hasSubTree(TreeNode source, TreeNode target) {
         //终止条件
         if (target == null) {
             return true;

@@ -12,6 +12,7 @@ import org.junit.jupiter.api.Test;
 class A003FindTest {
 
     A004Find a003Find;
+
     @BeforeEach
     void setUp() {
         a003Find = new A004Find();
@@ -23,8 +24,8 @@ class A003FindTest {
 
     @Test
     void find() {
-        int[][] array = {{1,2,3},{2,3,4}};
+        int[][] array = {{1, 2, 3}, {2, 3, 4}};
         int target = 2;
-        System.out.println("result : " + a003Find.find(array,target));
+        System.out.println("result : " + a003Find.find(array, target));
     }
 }

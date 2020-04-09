@@ -7,4 +7,14 @@ package cn.edu.zju.aimforoffer.algorithm;
  * @strategy
  */
 public class ComplexListNode {
+    int val;
+    ComplexListNode next;
+    ComplexListNode sibling;
+
+    public ComplexListNode() {
+    }
+
+    public ComplexListNode(int val) {
+        this.val = val;
+    }
 }

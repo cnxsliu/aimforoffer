@@ -4,8 +4,7 @@ package cn.edu.zju.aimforoffer.algorithm;
  * @author cnxsliu
  * @description
  * @date 2020/1/14 20:32
- * @strategy
- * 动态规划
+ * @strategy 动态规划
  * 1、首先定义函数f(n)为把长度为n的绳子剪成若干段后各段长度乘积的最大值。
  * 2、在剪第一刀的时候，有n-1种可能的选择，即1,2，...，n-1。因此f(n) = max(f(i)*f(n-1))
  * 3、这是一个从上至下的递归公式，有很多重复的子问题，改为按照从下而上的顺序计算。
@@ -18,17 +17,18 @@ public class A014MaxProductAfterCuttingSolution {
 
     /**
      * 动态规划
+     *
      * @param length
      * @return
      */
     public int maxProductAfterCuttingSolution1(int length) {
-        if(length < 2) {
+        if (length < 2) {
             return 0;
         }
-        if(length == 2) {
+        if (length == 2) {
             return 1;
         }
-        if(length == 3) {
+        if (length == 3) {
             return 2;
         }
         int[] products = new int[length + 1];
@@ -38,11 +38,11 @@ public class A014MaxProductAfterCuttingSolution {
         products[3] = 3;
 
         int max = 0;
-        for(int i = 4; i <= length; i++) {
+        for (int i = 4; i <= length; i++) {
             max = 0;
-            for (int j = 1; j <= i/2; j++) {
+            for (int j = 1; j <= i / 2; j++) {
                 int product = products[j] * products[i - j];
-                if(max < product) {
+                if (max < product) {
                     max = product;
                 }
                 products[i] = max;
@@ -54,24 +54,25 @@ public class A014MaxProductAfterCuttingSolution {
 
     /**
      * 贪婪算法
+     *
      * @param length
      * @return
      */
     public int maxProductAfterCuttingSolution2(int length) {
-        if(length < 2) {
+        if (length < 2) {
             return 0;
         }
-        if(length == 2) {
+        if (length == 2) {
             return 1;
         }
-        if(length == 3) {
+        if (length == 3) {
             return 2;
         }
         int timesOf3 = length / 3;
-        if(length - timesOf3 * 3 == 1) {
+        if (length - timesOf3 * 3 == 1) {
             timesOf3 -= 1;
         }
         int timeOf2 = (length - timesOf3 * 3) / 2;
-        return (int)(Math.pow(3, timesOf3) * (int)(Math.pow(2, timeOf2)));
+        return (int) (Math.pow(3, timesOf3) * (int) (Math.pow(2, timeOf2)));
     }
 }

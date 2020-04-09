@@ -4,8 +4,7 @@ package cn.edu.zju.aimforoffer.algorithm;
  * @author cnxsliu
  * @description
  * @date 2020/1/17 22:47
- * @strategy
- * 1、要删除结点i，先把结点i的下一个节点j的内容复制到i，然后把i的指针指向节点j的下一个节点。
+ * @strategy 1、要删除结点i，先把结点i的下一个节点j的内容复制到i，然后把i的指针指向节点j的下一个节点。
  * 2、此时在删除结点j，其效果刚好是把结点i删除了。
  */
 public class A018DeleteNode {

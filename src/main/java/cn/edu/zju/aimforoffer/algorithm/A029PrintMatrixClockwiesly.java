@@ -7,12 +7,11 @@ import java.util.List;
  * @author cnxsliu
  * @description
  * @date 2020/3/22 20:55
- * @strategy
- * 1、对终止行号和起始行号，终止列号和起始列号进行判断
+ * @strategy 1、对终止行号和起始行号，终止列号和起始列号进行判断
  * 2、注意临界条件
  */
 public class A029PrintMatrixClockwiesly {
-    public List<Integer> printMatrixClockwisely(int[][] matrix){
+    public List<Integer> printMatrixClockwisely(int[][] matrix) {
         List<Integer> res = new ArrayList<>();
         if (matrix == null || matrix.length == 0) {
             return res;

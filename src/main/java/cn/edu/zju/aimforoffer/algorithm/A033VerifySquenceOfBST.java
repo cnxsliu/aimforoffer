@@ -6,14 +6,13 @@ import java.util.Arrays;
  * @author cnxsliu
  * @description
  * @date 2020/4/4 16:47
- * @strategy
- * 1、最后一个数字是树的根节点的值
+ * @strategy 1、最后一个数字是树的根节点的值
  * 2、左子树都比根节点小，右节点都比根节点大，将数组二分
  * 3、分别对上面的左右子树进行递归
  * 4、如果出现左子树节点大于根节点或者右子树节点小于根节点，证明不是二叉搜索树；否则就是
  */
 public class A033VerifySquenceOfBST {
-    public boolean VerifySquenceOfBST (int[] sequence) {
+    public boolean VerifySquenceOfBST(int[] sequence) {
         if (sequence == null || sequence.length == 0) {
             return false;
         }

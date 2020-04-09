@@ -10,7 +10,7 @@ import sun.reflect.generics.tree.Tree;
  * 1、使用递归，左右节点分别使用递归，返回时比较左节点深度和右节点深度，取最大值并加1
  * 2、递归终止条件为根节点为null
  */
-public class A054TreeDepth {
+public class A055_1TreeDepth {
     public static int getTreeDepth(TreeNode root) {
         if (root == null) {
             return 0;

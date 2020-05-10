@@ -16,9 +16,13 @@ public class A024ReverseList {
         ListNode curr = head;
         ListNode after = null;
         while (curr != null) {
+            //将当前节点的下一个节点保存起来
             after = curr.next;
+            //将当前节点指向前一个节点
             curr.next = pre;
+            //将当前节点赋值给前一个节点
             pre = curr;
+            //将后一个节点赋值给当前节点
             curr = after;
         }
         return pre;

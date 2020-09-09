@@ -4,7 +4,8 @@ package cn.edu.zju.aimforoffer.algorithm;
  * @author cnxsliu
  * @description
  * @date 2020/1/10 10:58
- * @strategy 1、二分法要比遍历更快。
+ * @strategy
+ * 1、二分法要比遍历更快。
  * 2、需要考虑中间值和两端值相等的情况，这里需要按照顺序查找来解决。
  */
 public class A011Min {
